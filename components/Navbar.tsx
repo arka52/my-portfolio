@@ -18,7 +18,7 @@ export const Navbar = () => {
         setNav(!nav)
     }
 
-    function closeNav(event: React.MouseEvent<HTMLAnchorElement>): void {
+    function closeNav(): void {
         setNav(false)
     }
 

@@ -8,8 +8,8 @@ import fiverr from "../assets/fiverr.png"
 import elementor from "../assets/elementor.png"
 import logitech from "../assets/logitech.png"
 import oracle from "../assets/oracle.png"
-import { div } from "framer-motion/client"
-// Define an array of image objects, currently empty
+
+// Define an array of image objects
 const images = [
     { src: udemy, alt: "figma" },
     { src: fiverr, alt: "fiverr" },

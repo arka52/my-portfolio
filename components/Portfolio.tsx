@@ -4,7 +4,6 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import project1 from "../assets/braintube.png.webp";
 import { useMotionTemplate, useMotionValue, motion, animate } from "framer-motion";
-import { link } from "fs";
 
 const projects = [
     {
@@ -25,13 +24,13 @@ export const Portfolio = () => {
      const color = useMotionValue(COLORS_TOP[0])
 
      useEffect(() => {
-             animate(color, COLORS_TOP, {
-                 ease: "easeInOut",
-                 duration: 10,
-                 repeat: Infinity,
-                 repeatType: "mirror",
-             })
-         }, [])
+    animate(color, COLORS_TOP, {
+        ease: "easeInOut",
+        duration: 10,
+        repeat: Infinity,
+        repeatType: "mirror",
+    })
+}, [color, animate])
 
      const backgroundImage = useMotionTemplate`radial-gradient(125% 125% at 50% 0%, #000 50%, ${color})`;
 

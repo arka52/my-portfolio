@@ -1,7 +1,6 @@
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { Stack } from "@/components/Stack";
-import Image from "next/image";
 import { LogoAnimation } from "@/components/LogoAnimation";
 import { Portfolio } from "@/components/Portfolio";
 import { KeyMetrics } from "@/components/KeyMetrics";

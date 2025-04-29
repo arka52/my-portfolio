@@ -1,7 +1,4 @@
-import { section } from "framer-motion/client";
-import { it } from "node:test";
 import React from "react";
-import { DiVim } from "react-icons/di";
 import { FaReact } from "react-icons/fa";
 import { IoLogoNodejs } from "react-icons/io";
 import { SiTypescript } from "react-icons/si";
