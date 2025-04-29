@@ -47,8 +47,10 @@ export const KeyMetrics = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
             transition={{ duration: 0.8 }}
-            className="container mx-auto px-4 py-32 text-white"
+            className="px-4 py-32 text-white glass"
+            id='about'
         >
+            <div className='container mx-auto'>
             <motion.h2
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
@@ -57,7 +59,7 @@ export const KeyMetrics = () => {
             >
             KEY METRICS
             </motion.h2>
-            <div>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
                 {metrics.map((metric, index) => (
                     <motion.div
                         key={metric.id}
@@ -85,13 +87,14 @@ export const KeyMetrics = () => {
                         <motion.p
                             initial={{ opacity: 0 }}
                             animate={isInView ? { opacity: 1 } : { opacity: 0 }}
-                            transition={{ duration: 0.4, delay: 0.8 + index * 0.1 }}
+                            transition={{ duration: 0.4, delay: 1 + index * 0.1 }}
                             className='text-gray-400 '
                         >
                             {metric.description}
                         </motion.p>
                     </motion.div>
                 ))}
+            </div>
             </div>
             
         </motion.section>

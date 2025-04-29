@@ -35,7 +35,7 @@ const images = [
 
 export const LogoAnimation = () => {
     return (
-        <div className="py-8 bg-purple-200/10 opacity-80">
+        <div className="py-8 bg-purple-200/10 glass opacity-80">
             <div className="container mx-auto">
                 <div className="overflow-hidden
                                 [mask-image:linear-gradient(to_right,_transparent,black_25%,_black_75%,_transparent)]">

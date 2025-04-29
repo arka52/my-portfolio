@@ -23,9 +23,9 @@ export const Navbar = () => {
     }
 
     return (
-        <div className="z-50-fixed flex justify-center w-full text-white font-bold">
+        <div className="z-50 fixed flex justify-center w-full text-white font-bold">
 
-            <div className=" mt-8 backdrop-blur-3xl rounded-3xl hidden md:flex items-center justify-center p-2 max-w-[400px] mx-auto">
+            <div className="mt-8 backdrop-blur-3xl rounded-3xl hidden md:flex items-center justify-center p-2 max-w-[400px] mx-auto">
 
                 <ul className="flex flex-row p-2 space-x-8">
                     {navLinks.map((link, index) => (
