@@ -3,8 +3,8 @@
 
 import { FiArrowRight } from "react-icons/fi"
 import React, { useEffect } from "react"
-import profilepic from "@/assets/profilepic.png"
-import obj from "../public/obj.png"
+import profilepic from "@/assets/arkaprotfolio.png"
+// import obj from "../public/obj.png"
 import Image from "next/image"
 import { useMotionTemplate, useMotionValue, animate, motion } from "framer-motion"
 
@@ -44,11 +44,8 @@ export const Hero = () => {
                 <Image
                     src={profilepic}
                     alt="Profile Picture"
-                    width={250}
+                    width={300}
                 />
-
-
-
 
                 <p className="my-6 max-w-xl">Fullstack Developer based in Kolkata, with over 2 years of experience</p>
 
